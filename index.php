@@ -16,6 +16,7 @@ require_once './controllers/admin/productController.php';
 require_once './models/admin/userModels.php';
 require_once './models/admin/donHangModel.php';
 require_once './models/admin/productModel.php';
+
 $User = new HomeUserController();
 $Admin = new HomeAdminController;
 $AdminDonHang = new AdminDonHangController();
@@ -40,6 +41,7 @@ $response = match ($act) {
     'admin/donHang/detail' => $AdminDonHang->detailDonHang(),
     'admin/donHang/edit' => $AdminDonHang->editDonHang(),
     'admin/donHang/editDonHang' => $AdminDonHang->postDonHang(),
+    
 
     
 
@@ -55,6 +57,7 @@ $response = match ($act) {
     'admin/product/delete' =>$AdminProduct->DeleteProduct(),
     'admin/product/add' =>$AdminProduct->insertProduct()
 };
+
 
 
 

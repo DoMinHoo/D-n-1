@@ -48,8 +48,8 @@
                 <div class="form-group">
                     <label for="status">Status</label>
                     <select name="status" class="form-control custom-select" >
-                        <option value="0" <?= $edit['status'] == 0 ? 'selected' : '' ?> >Hoạt Động</option>
-                        <option value="1" <?= $edit['status'] == 1 ? 'selected' : '' ?> >Không Hoạt Động</option>
+                        <option value="0" <?= $dataOneProduct['status'] == 0 ? 'selected' : '' ?> >Hoạt Động</option>
+                        <option value="1" <?= $dataOneProduct['status'] == 1 ? 'selected' : '' ?> >Không Hoạt Động</option>
                     </select>
                 </div>
                 <button type="submit" name="editProduct" class="btn btn-success">Edit</button>

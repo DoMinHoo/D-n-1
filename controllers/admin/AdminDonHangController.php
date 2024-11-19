@@ -15,7 +15,7 @@ class AdminDonHangController
     {   
         $listDonHang = $this->donHang->getAllDonHang();
         if ($listDonHang) {
-            require_once './views/admin/DonHang/litsDonHang.php';
+            require_once './views/admin/DonHang/listDonHang.php';
         }
     }
  
@@ -36,7 +36,7 @@ class AdminDonHangController
     {
         if (isset($_GET['id'])) {
             $id = $_GET['id'];
-            $dataUser = $this->user->getAllUser();
+            // $dataUser = $this->user->getAllUser();
             // var_dump($dataUser); die();
             $edit = $this->donHang->getOneDonHang($id);
             require_once './views/admin/DonHang/editDonHang.php';

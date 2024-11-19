@@ -32,7 +32,7 @@
                                 <h3 class="card-title"> Danh Sách Sản Phẩm </h3>
                 
                             </div>
-                            <a class="btn btn-success mb-2" href="?act=admin/product/add" data-toggle="modal" data-target="#addModal">Add Thành viên</a>
+                            <a class="btn btn-success mb-2" href="?act=admin/product/add" data-toggle="modal" data-target="#addModal">Thêm Sản Phẩm</a>
 
                             <!-- card header -->
                             <div class="card-body">
@@ -41,7 +41,7 @@
                                         <tr>
                                             <th>id</th>
                                             <th>name</th>
-                                            <th>price</th>
+                                            <th>price</th>  
                                             <th>img</th>
                                             <th>description</th>
                                             <th>id_categories</th>

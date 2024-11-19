@@ -10,11 +10,11 @@ class ProductController
        $this->product=new AdminProductModels();
     }
     public function getAllProduct()
-    {   
+    {       
         $listProduct = $this->product->getAllProduct();
-        if ($listProduct) {
+        // if ($listProduct) {
             require_once './views/admin/product/listProduct.php';
-        }
+        // }
     }
 
 
